@@ -1,0 +1,151 @@
+:root {
+  --main-bg-color: #f7944d;
+  --main-bg-color-light: #f7781d;
+  --font-color: #ffffff;
+  --highlight-color: #fff9f0cc;  
+  --highlight-new-color: #5a553f;  
+  --footer-bg-color: #d66f00;  
+  --title-font-size: 30px;
+
+  /* additional colors */
+  --heading-color: #fff2d6;  
+  --paragraph-color: #f0e8d8;  
+  --subheading-color: #2b6b8a;  
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #fff8f0;  
+  color: var(--paragraph-color);
+}
+
+nav {
+  background-color: var(--main-bg-color);
+  padding: 15px 20px;
+  text-align: center;
+  border-radius: 5px;
+  margin: 20px auto;
+  width: 80%;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  font-size: 16px;
+}
+
+nav ul li p {
+  margin: 0;
+  font-weight: bold;
+  color: var(--highlight-new-color);
+  cursor: pointer;
+}
+
+nav ul li a {
+  color: var(--font-color);
+  text-decoration: none;
+  padding: 7px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+  background-color: var(--highlight-new-color);
+  color: var(--main-bg-color-light);
+  outline: none;
+}
+
+header {
+  background-color: var(--main-bg-color);
+  color: var(--font-color);
+  padding: 40px 20px;
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.highlight {
+  color: var(--highlight-color);
+}
+
+.highlight.new {
+  color: var(--highlight-new-color);
+}
+
+.title {
+  font-size: var(--title-font-size);
+  font-weight: 700;
+  color: var(--heading-color);
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.25);
+}
+
+.container {
+  padding: 40px 20px;
+  background-color: var(--main-bg-color);
+  color: var(--font-color);
+  text-align: center;
+  margin: 30px auto;
+  width: 80%;
+  border-radius: 5px;
+}
+
+.container h2 {
+  font-size: 2.75rem;
+  color: var(--heading-color);
+  font-weight: 700;
+  margin-bottom: 15px;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+
+.container h3 {
+  font-size: 25px;
+  color: var(--subheading-color);
+  font-weight: 600;
+  margin-top: 25px;
+  margin-bottom: 10px;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+}
+
+.container p {
+  margin: 12px 0;
+  font-size: 20px;
+  line-height: 1.6;
+  color: var(--paragraph-color);
+  font-weight: 400;
+}
+
+.food-image {
+  display: block;
+  width:  500px;
+  margin: 30px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+ 
+
+video {
+  width: 35%;
+  display: block;
+  margin: 10px auto 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+}
+
+footer {
+  background-color: var(--footer-bg-color);
+  color: var(--font-color);
+  text-align: center;
+  padding: 20px 0 5px 0;
+  margin: 20px auto;
+  max-width: 100%;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.2);
+}
